@@ -4,13 +4,16 @@ import {UsuarioContext} from '../../context/user';
 
 function Chat() {
     
-    const {user} = useContext(UsuarioContext);
+    const {user,signOut} = useContext(UsuarioContext);
     
     return (
         <div>
             <h1>
-                Chat {user}
+                Chat {user?.email || ''}
             </h1>
+            <button type="button" onClick={()=>{signOut()}}>
+                Sair
+            </button>
         </div>
     )
 }
