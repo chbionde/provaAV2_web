@@ -1,10 +1,10 @@
-import React,{useContext,useState} from "react";
+import React,{useContext,useState, useEffect} from "react";
 
 import {UsuarioContext} from '../../context/user';
 
 import firebaseApp from "../../services/firebase";
 
-import { getFirestore, addDoc, collection } from "firebase/firestore";
+import { getFirestore, addDoc, collection, onSnapshot, query, where } from "firebase/firestore";
 function Chat() {
     
     const db = getFirestore(firebaseApp);
@@ -13,12 +13,31 @@ function Chat() {
     
     const [messages, setMessages] = useState([])
 
+    useEffect(()=>{
+        const unsub = onSnapshot(query(collection(db, "mensagens"),where("lido","!=",true)),(querySnapshot)=>{
+            const tmp = [];
+
+            querySnapshot.forEach(async (document)=> {
+                tmp.push({
+                    id: document.id,
+                    ...document.data()
+                })
+            })
+            setMessages(tmp)
+        });
+
+        return ()=> {
+            unsub()
+        }
+
+    },[])
+
     async function handleMessage() {
         try {
-            await addDoc(collection(db,'menssagens',{
-                menssagens: "ola",
+            await addDoc(collection(db,'mensagens'),{
+                mensagem: "ola",
                 lido: false
-            }))
+            })
         } catch (err) {
             console.warn(err);
         }
@@ -29,6 +48,11 @@ function Chat() {
             <h1>
                 Chat {user? user.email :''}
             </h1>
+
+            {messages.map((item)=>(
+                <p key={item.id}>{item.id}</p>
+            ))}
+
             <button type="button" onClick={()=>{handleMessage()}}>
                 Enviar
             </button>
