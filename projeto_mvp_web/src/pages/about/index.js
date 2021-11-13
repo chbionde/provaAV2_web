@@ -10,7 +10,7 @@ function About() {
     let history = useHistory();
 
     const handleClick = () => {
-        alert('Chat');
+        // alert('Chat');
         history.push('/chat');
     }
     return (

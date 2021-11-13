@@ -9,7 +9,7 @@ function Home() {
             <Link to={{
                 pathname: "/about",
                 state: {
-                    nome: "Teste",
+                    nome: "carlos",
                     idade: 25
                 }
             }}>

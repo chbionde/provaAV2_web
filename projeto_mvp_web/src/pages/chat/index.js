@@ -1,10 +1,15 @@
-import React from "react";
+import React,{useContext} from "react";
+
+import {UsuarioContext} from '../../context/user';
 
 function Chat() {
+    
+    const {user} = useContext(UsuarioContext);
+    
     return (
         <div>
             <h1>
-                Chat
+                Chat {user}
             </h1>
         </div>
     )

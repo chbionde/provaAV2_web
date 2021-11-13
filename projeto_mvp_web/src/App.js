@@ -9,7 +9,9 @@ import './services/firebase';
 
 function App() {
   return (
-      <Routes/>
+      <UsuarioProvider>
+        <Routes/>
+      </UsuarioProvider>
   );
 }
 
