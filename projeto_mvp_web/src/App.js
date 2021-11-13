@@ -1,11 +1,15 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
-import Login from './pages/login';
+import Routes from './routes';
+
+import {UsuarioProvider} from './context/user';
+
+import './services/firebase';
 
 function App() {
   return (
-      <Login/>
+      <Routes/>
   );
 }
 
