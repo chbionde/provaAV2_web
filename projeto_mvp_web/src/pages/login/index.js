@@ -51,12 +51,36 @@ function Login() {
                 </div>
                </ContainerLogoPharse>
                <ContainerSignIn>
-
+                    <div id="conteinerLogin">
+                        <div id="conteinerButtons">
+                            <div class="button">
+                                Membro
+                            </div>
+                            <div class="button">
+                                Convidado
+                            </div>
+                        </div>
+                    </div>
                </ContainerSignIn>
             </Content>
 
             <Footer>
-               
+               <div id="logo">
+                    <img src = "/images/olimpiada.png" width='150px'/>
+               </div>
+               <div id="about">
+                    <p>
+                        Contato
+                    </p>
+                    <p>
+                        contato@contato.com
+                    </p>
+               </div>
+               <div id="social">
+                    <img src = "/images/Facebook.png" width='50px'/>
+                    <img src = "/images/Instagram.png" width='50px'/>
+                    <img src = "/images/Linkedin.png" width='50px'/>
+               </div>
             </Footer>
         </Main>
 
