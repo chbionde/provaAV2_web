@@ -36,12 +36,19 @@ function Login() {
     return (
         <Main>
             <Header>
-                
+              
             </Header>
 
             <Content>
                <ContainerLogoPharse>
-
+                <div id="logo">
+                    <img src = "/images/olimpiada.png" width='150px'/>
+                </div>
+                <div id="pharse">
+                    <p>Problemas para formar</p>
+                    <p>um grupo de trabalho?</p>
+                    <p>O Grupou! Resolve!</p>
+                </div>
                </ContainerLogoPharse>
                <ContainerSignIn>
 

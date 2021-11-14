@@ -21,14 +21,29 @@ export const Content = styled.div`
 
 export const ContainerLogoPharse = styled.div`
     display: flex;
-    flex:1;
-    background-color: #e6e6e6;
+    flex:2;
+    flex-direction:column;
+
+    #logo{
+        padding: 50px 0 0 2vw;
+    }
+
+    #pharse{
+        padding-left:3vw;
+        padding-top:20px;
+    }
+
+    #pharse p{
+        font-size:30px;
+        color:#fff;
+        line-height:15px;
+    }
 `;
 
 export const ContainerSignIn = styled.div`
     display: flex;
     flex:1;
-    background-color: #ccc;
+    
 `;
 
 export const Footer = styled.div`
