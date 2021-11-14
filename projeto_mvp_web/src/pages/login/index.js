@@ -15,22 +15,27 @@ import {UsuarioContext,} from '../../context/user';
 function Login() {
 
     const {signIn, signUp} = useContext(UsuarioContext);
-    const [email,setEmail] = useState(document.querySelector("#inputEmail").value);
-    const [password,setpassword] = useState(document.querySelector("#inputSenha").value);
+    const [email,setEmail] = useState('');
+    const [password,setpassword] = useState('');
     
     const handleLogin = async () => {
         try{
+            setEmail(document.querySelector("#inputEmail").value);
+            setpassword(document.querySelector("#inputEmail").value);
             await signIn(email,password);
         }catch(err){
-            console.warn(err);
+            alert("SENHA OU E-MAIL INVALIDOS");
         }
     }
-
+    
     const handleCadastro = async () => {
         try{
+            setEmail(document.querySelector("#inputEmail").value);
+            setpassword(document.querySelector("#inputEmail").value);
             await signUp(email,password);
         }catch(err){
-            console.warn(err);
+            console.log('================>',err)
+            alert("USUARIO JÁ CADASTRADOS");
         }
     }
     return (
