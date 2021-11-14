@@ -53,12 +53,27 @@ function Login() {
                <ContainerSignIn>
                     <div id="conteinerLogin">
                         <div id="conteinerButtons">
-                            <div class="button">
+                            <div class="button inativo">
                                 Membro
                             </div>
-                            <div class="button">
+                            <div class="button inativo">
                                 Convidado
                             </div>
+                        </div>
+                        <div class="box">
+                            <div class="title">
+                                E-mail
+                            </div>
+                            <input placeholder="Digite seu e-mail" />
+                        </div>
+                        <div class="box">
+                            <div class="title">
+                                Senha
+                            </div>
+                            <input placeholder="Digite sua senha" />
+                        </div>
+                        <div>
+                            
                         </div>
                     </div>
                </ContainerSignIn>

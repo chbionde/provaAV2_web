@@ -67,7 +67,44 @@ export const ContainerSignIn = styled.div`
 
     #conteinerLogin #conteinerButtons .button{
         border-bottom: 4px solid #ae1b73;
+        padding-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        margin: 0px 5px;
+        color: #673f66;
+        cursor: pointer;
+        text-align: center;
 
+    }
+
+    #conteinerLogin #conteinerButtons .inativo{
+        border-bottom: none;
+        color: #e6e6e6;
+    }
+    #conteinerLogin #conteinerButtons .inativo:hover{
+        border-bottom: 4px solid #ae1b73;
+        color: #673f66;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .box .title{
+        color: #ccc;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .box input{
+        border: 1px solid #ccc;
+        height: 50px;
+        border-radius: 5px;
+        padding: 0 20px;
+        margin-top: 5px;
+        
     }
 `;
 
