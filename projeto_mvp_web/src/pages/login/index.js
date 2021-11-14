@@ -15,8 +15,8 @@ import {UsuarioContext,} from '../../context/user';
 function Login() {
 
     const {signIn, signUp} = useContext(UsuarioContext);
-    const [email,setEmail] = useState('teste@gmail.com');
-    const [password,setpassword] = useState('123456');
+    const [email,setEmail] = useState(document.querySelector("#inputEmail").value);
+    const [password,setpassword] = useState(document.querySelector("#inputSenha").value);
     
     const handleLogin = async () => {
         try{
