@@ -2,7 +2,12 @@ import React,{useContext,useState} from "react";
 
 import {UsuarioContext,} from '../../context/user';
 
-// import {  } from "./styles";
+ import {  
+     Main,
+     Header,
+     Content,
+     Footer
+ } from "./styles";
 
 function Login() {
 
@@ -26,17 +31,31 @@ function Login() {
         }
     }
     return (
-        <div>
-            {/* <h1>
-                Login
-            </h1>
-            <button type="button" onClick={handleLogin}>
-                Logar
-            </button>
-            <button type="button" onClick={handleCadastro}>
-                Cadastrar
-            </button> */}
-        </div>
+        <Main>
+            <Header>
+                <p>Header</p>
+            </Header>
+
+            <Content>
+                <p>Content</p>
+            </Content>
+
+            <Footer>
+                <p>Footer</p>
+            </Footer>
+        </Main>
+
+        // <div>
+        //     <h1>
+        //         Login
+        //     </h1>
+        //     <button type="button" onClick={handleLogin}>
+        //         Logar
+        //     </button>
+        //     <button type="button" onClick={handleCadastro}>
+        //         Cadastrar
+        //     </button>
+        // </div>
     )
 }
 
