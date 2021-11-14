@@ -72,8 +72,13 @@ function Login() {
                             </div>
                             <input placeholder="Digite sua senha" />
                         </div>
-                        <div>
-                            
+                        <div id="conteinerLoginOrJoin">
+                            <div class="button">
+                                Cadastre-se
+                            </div>
+                            <div class="button">
+                                Entrar
+                            </div>
                         </div>
                     </div>
                </ContainerSignIn>
