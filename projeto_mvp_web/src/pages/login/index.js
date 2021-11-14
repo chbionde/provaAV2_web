@@ -72,11 +72,14 @@ function Login() {
                             </div>
                             <input placeholder="Digite sua senha" />
                         </div>
+                        <div class="forgotCredentials">
+                            Esqueci minha senha
+                        </div>
                         <div id="conteinerLoginOrJoin">
-                            <div class="button">
+                            <div class="button inverte" onClick={handleCadastro}>
                                 Cadastre-se
                             </div>
-                            <div class="button">
+                            <div class="button inverte" onClick={handleLogin}>
                                 Entrar
                             </div>
                         </div>
@@ -103,18 +106,6 @@ function Login() {
                </div>
             </Footer>
         </Main>
-
-        // <div>
-        //     <h1>
-        //         Login
-        //     </h1>
-        //     <button type="button" onClick={handleLogin}>
-        //         Logar
-        //     </button>
-        //     <button type="button" onClick={handleCadastro}>
-        //         Cadastrar
-        //     </button>
-        // </div>
     )
 }
 

@@ -104,7 +104,45 @@ export const ContainerSignIn = styled.div`
         border-radius: 5px;
         padding: 0 20px;
         margin-top: 5px;
-        
+
+    }
+
+    #conteinerLoginOrJoin {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #conteinerLoginOrJoin .button{
+        display: flex;
+        height: 50px;
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid #ae1b73;
+        justify-content :center;
+        align-items: center;
+        color: #ae1b73;
+        flex: 1;
+        margin-top: 40px;
+        cursor: pointer;
+    }
+
+    #conteinerLoginOrJoin .button:hover{
+        opacity: 0.9;
+    }
+    #conteinerLoginOrJoin .button:first-child{
+        margin-right: 15px;
+    }
+    #conteinerLoginOrJoin .inverte:hover {
+        background-color: #ae1b73;
+        color: white;
+    }
+    .forgotCredentials{
+        color: #ae1b73;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 13px;
+        margin-top: 5px;
+        cursor: pointer;
     }
 `;
 
