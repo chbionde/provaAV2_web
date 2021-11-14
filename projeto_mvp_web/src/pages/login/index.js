@@ -64,13 +64,13 @@ function Login() {
                             <div class="title">
                                 E-mail
                             </div>
-                            <input placeholder="Digite seu e-mail" />
+                            <input id="inputEmail" placeholder="Digite seu e-mail" />
                         </div>
                         <div class="box">
                             <div class="title">
                                 Senha
                             </div>
-                            <input placeholder="Digite sua senha" />
+                            <input id="inputSenha" placeholder="Digite sua senha" />
                         </div>
                         <div class="forgotCredentials">
                             Esqueci minha senha
