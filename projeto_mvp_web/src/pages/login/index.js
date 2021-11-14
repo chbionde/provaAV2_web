@@ -2,6 +2,8 @@ import React,{useContext,useState} from "react";
 
 import {UsuarioContext,} from '../../context/user';
 
+// import {  } from "./styles";
+
 function Login() {
 
     const {signIn, signUp} = useContext(UsuarioContext);
@@ -25,7 +27,7 @@ function Login() {
     }
     return (
         <div>
-            <h1>
+            {/* <h1>
                 Login
             </h1>
             <button type="button" onClick={handleLogin}>
@@ -33,7 +35,7 @@ function Login() {
             </button>
             <button type="button" onClick={handleCadastro}>
                 Cadastrar
-            </button>
+            </button> */}
         </div>
     )
 }
