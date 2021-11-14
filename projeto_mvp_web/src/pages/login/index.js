@@ -6,7 +6,10 @@ import {UsuarioContext,} from '../../context/user';
      Main,
      Header,
      Content,
-     Footer
+     Footer,
+     ContainerLogoPharse,
+     ContainerSignIn,
+
  } from "./styles";
 
 function Login() {
@@ -33,15 +36,20 @@ function Login() {
     return (
         <Main>
             <Header>
-                <p>Header</p>
+                
             </Header>
 
             <Content>
-                <p>Content</p>
+               <ContainerLogoPharse>
+
+               </ContainerLogoPharse>
+               <ContainerSignIn>
+
+               </ContainerSignIn>
             </Content>
 
             <Footer>
-                <p>Footer</p>
+               
             </Footer>
         </Main>
 
