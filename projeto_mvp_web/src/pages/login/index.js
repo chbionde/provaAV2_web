@@ -36,12 +36,19 @@ function Login() {
     return (
         <Main>
             <Header>
-                
+               
             </Header>
 
             <Content>
                <ContainerLogoPharse>
-
+                <div id="logo">
+                    <img src="/images/logo_white.png" width="170px"/>
+                </div>
+                <div id="phase">
+                    <p>Problemas para formar</p>
+                    <p>um grupo de assalto?</p>
+                    <p>O Assaltou! Resolve!</p>
+                </div>
                </ContainerLogoPharse>
                <ContainerSignIn>
 

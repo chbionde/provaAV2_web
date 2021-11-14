@@ -15,25 +15,36 @@ export const Header = styled.div`
 
 export const Content = styled.div`
     display: flex;
-    flex:1;
+    flex:2;
 
 `;
 
 export const ContainerLogoPharse = styled.div`
     display: flex;
     flex:1;
-    background-color: #e6e6e6;
+    flex-direction: column;
+    #logo{
+        padding: 50px 0 0 2vw;
+    }
+    #phase{
+        padding-left: 3vw;
+        padding-top: 20px;
+    }
+    #phase p {
+        font-size: 30px;
+        color: #dc8822;
+        line-height: 15px;
+    }
 `;
 
 export const ContainerSignIn = styled.div`
     display: flex;
     flex:1;
-    background-color: #ccc;
 `;
 
 export const Footer = styled.div`
     display: flex;
     height: 15vh;
-    background-color:#AE1B73;
+    background-color:#dc8822;
 `;
 
