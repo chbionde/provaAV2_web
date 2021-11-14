@@ -1,6 +1,9 @@
 import React from "react";
 import {Link} from 'react-router-dom';
+import {UsuarioContext} from '../../context/user';
+
 function Home() {
+    console.log("===================>",UsuarioContext);
     return (
         <div>
             <h1>
@@ -9,8 +12,7 @@ function Home() {
             <Link to={{
                 pathname: "/about",
                 state: {
-                    nome: "carlos",
-                    idade: 25
+                    nome: "",
                 }
             }}>
                 Ir para a página Sobre

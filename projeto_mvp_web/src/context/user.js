@@ -10,7 +10,7 @@ const auth = getAuth();
 const UsuarioContext = createContext({});
 const UsuarioProvider = ({children}) => {
     
-    const [user,setUser] = useState("carlos");
+    const [user,setUser] = useState("");
     const [loading, setLoading] = useState(true);
 
     useEffect(()=>{

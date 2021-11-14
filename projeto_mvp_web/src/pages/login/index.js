@@ -1,6 +1,6 @@
 import React,{useContext,useState} from "react";
 
-import {UsuarioContext,} from '../../context/user';
+import {UsuarioContext} from '../../context/user';
 
  import {  
      Main,
@@ -24,7 +24,7 @@ function Login() {
             setpassword(document.querySelector("#inputEmail").value);
             await signIn(email,password);
         }catch(err){
-            alert("SENHA OU E-MAIL INVALIDOS");
+            console.log(err);
         }
     }
     
@@ -34,8 +34,7 @@ function Login() {
             setpassword(document.querySelector("#inputEmail").value);
             await signUp(email,password);
         }catch(err){
-            console.log('================>',err)
-            alert("USUARIO JÁ CADASTRADOS");
+            console.log(err);
         }
     }
     return (
