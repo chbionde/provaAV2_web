@@ -21,25 +21,29 @@ export const Content = styled.div`
 
 export const ContainerLogoPharse = styled.div`
     display: flex;
-    flex:1;
-    flex-direction: column;
+    flex:2;
+    flex-direction:column;
+
     #logo{
         padding: 50px 0 0 2vw;
     }
-    #phase{
-        padding-left: 3vw;
-        padding-top: 20px;
+
+    #pharse{
+        padding-left:3vw;
+        padding-top:20px;
     }
-    #phase p {
-        font-size: 30px;
-        color: #dc8822;
-        line-height: 15px;
+
+    #pharse p{
+        font-size:30px;
+        color:#fff;
+        line-height:15px;
     }
 `;
 
 export const ContainerSignIn = styled.div`
     display: flex;
     flex:1;
+    
 `;
 
 export const Footer = styled.div`
