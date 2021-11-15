@@ -8,6 +8,8 @@ import { getFirestore, addDoc, collection, onSnapshot, query, orderBy } from "fi
 
 import {  
     Main,
+    Header,
+    Footer,
     DivChat,
     UserChat,
     Msg,
@@ -64,6 +66,9 @@ function Chat() {
     }
     return (
         <Main>
+            <Header>
+
+            </Header>
             <DivChat>
                 <h1>
                     Chat {user? user.email :''}
@@ -95,6 +100,24 @@ function Chat() {
                     Sair
                 </button>
             </div>
+            <Footer>
+                <div id="logo">
+                    <img src = "/images/olimpiada.png" width='150px'/>
+               </div>
+               <div id="about">
+                    <p>
+                        Contato
+                    </p>
+                    <p>
+                        contato@contato.com
+                    </p>
+               </div>
+               <div id="social">
+                    <img src = "/images/Facebook.png" width='50px'/>
+                    <img src = "/images/Instagram.png" width='50px'/>
+                    <img src = "/images/Linkedin.png" width='50px'/>
+               </div>
+            </Footer>
         </Main>
     )
 }

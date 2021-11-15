@@ -6,6 +6,13 @@ export const Main = styled.div`
     flex-direction:column;
 `;
 
+export const Header = styled.div`
+    height:15vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+`;
+
 export const DivChat = styled.div`
     display:flex;
     flex: 1;
@@ -73,4 +80,37 @@ export const UserChat = styled.div`
         opacity: 1;
         /* background-color: white; */
     }
+`;
+
+export const Footer = styled.div`
+    display: flex;
+    height: 15vh;
+    background-color:#ae1b73;
+
+    #logo{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    #about{
+        flex: 4;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    #about p{
+        font-size: 12px;
+        line-height: 2px;
+    }
+    #social{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+
 `;
