@@ -2,7 +2,7 @@ import React,{useContext,useState} from "react";
 
 import {UsuarioContext} from '../../context/user';
 
- import {  
+import {  
      Main,
      Header,
      Content,

@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 import {UsuarioContext} from '../../context/user';
 
 function Home() {
-    console.log("===================>",UsuarioContext);
     return (
         <div>
             <h1>
