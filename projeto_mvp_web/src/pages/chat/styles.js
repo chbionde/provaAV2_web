@@ -4,6 +4,31 @@ export const Main = styled.div`
     display:flex;
     min-height:100vh;
     flex-direction:column;
+
+    #logo{
+        display: flex;
+        flex: 1;
+    }
+    
+    #buttonSair{
+        display: flex;
+        align-items: flex-end;
+        margin-right: 5vw;
+    }
+
+    #buttonSair #bSair{
+        background-color: #DE8BBA;
+        border-radius: 9px;
+        cursor: pointer;
+        opacity: 0.5;
+        height: 45px;
+        width: 45px;
+    }
+    #buttonSair #bSair:hover{
+        opacity: 1;
+    }
+
+    
 `;
 
 export const Header = styled.div`
@@ -11,20 +36,27 @@ export const Header = styled.div`
     display:flex;
     align-items:center;
     justify-content: center;
+
+    #logo p{
+        
+    }
 `;
 
 export const DivChat = styled.div`
     display:flex;
     flex: 1;
     flex-direction:column;
-
+    
     #conteinerMSG {
+        width: 50vw;
         margin: 10px;
         background-color: #D9D7D8;
         border-radius: 15px;
         padding-left: 20px;
         box-sizing: border-box;
         color: black;
+        display: flex;
+        flex-direction: column;
     }
     
     #conteinerMSG #nameDate {
@@ -36,13 +68,18 @@ export const DivChat = styled.div`
         flex-direction: row;
         margin-left: 15px;
         line-height: 0px;
+        width: 100%;
+        word-wrap: break-word; 
+        
     }
     #conteinerMSG #nameDate .userName{
+        display: flex;
         flex: 1;
         font-size: 18px;
         line-height: 0px;
     }
     #conteinerMSG #nameDate .sendDate{
+        display: flex;
         align-items: flex-end;
         margin-right: 15px;
         font-size: 10px;
@@ -54,6 +91,8 @@ export const UserChat = styled.div`
     flex: 1;
     flex-direction:row;
     align-items: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
 
     #inputMensages {
         flex: 1;

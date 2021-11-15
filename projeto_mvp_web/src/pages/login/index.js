@@ -90,7 +90,6 @@ function Login() {
                     </div>
                </ContainerSignIn>
             </Content>
-
             <Footer>
                <div id="logo">
                     <img src = "/images/olimpiada.png" width='150px'/>

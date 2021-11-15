@@ -67,7 +67,17 @@ function Chat() {
     return (
         <Main>
             <Header>
-
+                <div id="logo">
+                    <img src = "/images/olimpiada.png" width='150px'/>
+                    <p>
+                        Grupou
+                    </p>
+                </div>
+                <div id="buttonSair">
+                    <button id="bSair" type="button" onClick={()=>{signOut()}}>
+                        Sair
+                    </button>
+                </div>
             </Header>
             <DivChat>
                 <h1>
@@ -95,11 +105,6 @@ function Chat() {
                     <img src="/images/send_message.png" width="35px"/>
                 </button>
             </UserChat>
-            <div>
-                <button type="button" onClick={()=>{signOut()}}>
-                    Sair
-                </button>
-            </div>
             <Footer>
                 <div id="logo">
                     <img src = "/images/olimpiada.png" width='150px'/>
