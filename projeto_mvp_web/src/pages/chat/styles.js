@@ -38,8 +38,15 @@ export const Header = styled.div`
     justify-content: center;
 
     #logo p{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 2vw;
+        color: #ae1b73;
         
-    }
+    }   
 `;
 
 export const DivChat = styled.div`
