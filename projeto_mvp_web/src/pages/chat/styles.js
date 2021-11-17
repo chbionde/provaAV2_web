@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const Main = styled.div`
+
     display:flex;
     min-height:100vh;
     flex-direction:column;
-
+     
     #logo{
         display: flex;
         flex: 1;
@@ -71,12 +72,11 @@ export const DivChat = styled.div`
         flex-direction: row;
     }
     #conteinerMSG .textoMsg {
-        display: flex;
+        display: block;
         flex-direction: row;
         margin-left: 15px;
-        line-height: 0px;
-        width: 100%;
-        word-wrap: break-word; 
+        width: 95%;
+        word-wrap:break-word; 
         
     }
     #conteinerMSG #nameDate .userName{
@@ -111,7 +111,10 @@ export const UserChat = styled.div`
         color: black;
         background-color: #DE8BBA;
         height: 35px;
+        width: 95%;
         opacity: 0.5;
+        
+        
     }
     #inputMensages:hover {
         opacity: 1;
@@ -124,7 +127,7 @@ export const UserChat = styled.div`
     }
     #enviarMsg:hover {
         opacity: 1;
-        /* background-color: white; */
+        
     }
 `;
 
@@ -158,5 +161,5 @@ export const Footer = styled.div`
         justify-content: space-around;
         
     }
-
+ 
 `;

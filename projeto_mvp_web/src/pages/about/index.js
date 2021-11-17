@@ -1,11 +1,13 @@
 import React from "react";
-import {useLocation, useHistory} from 'react-router-dom';
-
+import { useLocation, useHistory } from 'react-router-dom';
+import {
+    TagAbout,
+} from "./styles";
 function About() {
 
     let location = useLocation();
 
-    let {nome} = location.state || '';
+    let { nome } = location.state || '';
 
     let history = useHistory();
 
@@ -14,14 +16,19 @@ function About() {
         history.push('/chat');
     }
     return (
-        <div>
-            <h1>
-                About {nome}
-            </h1>
-            <button type="button" onClick={handleClick}>
-                Ir para o chat
-            </button>
-        </div>
+        <TagAbout>
+            <div id="conteiner_about">
+                <h1>
+                    About {nome}
+                </h1>
+                <div>
+                    <img id="logo" src="/images/olimpiada.png" width='150px' />
+                </div>
+                <button type="button" id="botao" onClick={handleClick}>
+                    Ir para o chat
+                </button>
+            </div>
+        </TagAbout>
     )
 }
 
