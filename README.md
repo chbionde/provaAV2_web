@@ -3,6 +3,6 @@ Projeto de chat
 
 
 Nomes dos integrantes:
-    nome: Carlos Henrique Lopes Bionde   matricula: 2019101856
-    nome:   matricula:
-    nome:   matricula:
+    Nome: Carlos Henrique Lopes Bionde;  Matricula: 2019101856
+    Nome: Gabriel de Magalhães Barreto;  Matricula: 2019101843
+    Nome: Sidnei dos Santos Ferreira Junior;  Matricula: 2019101850
